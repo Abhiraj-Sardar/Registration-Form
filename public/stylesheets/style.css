@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Doodle+Shadow&display=swap');
+
+body{
+    font-family: 'Rubik Doodle Shadow', system-ui;
+    background: #7fe6c4;
+}
+.container {
+    position: relative;
+    max-width: 500px;
+    margin-left: 27rem;
+    margin-top: 8rem;
+    width: 100%;
+    padding: 25px;
+    padding-right: 53px;
+    border-radius: 50px;
+    background: #7fe6c4;
+    box-shadow:  -25px 25px 39px #69bfa3,
+             25px -25px 39px #95ffe5;
+  }
+  
+  .container header {
+    font-size: 1.2rem;
+    color: #000;
+    font-weight: 600;
+    text-align: center;
+    margin-left: 4rem;
+  }
+  
+  .container .form {
+    margin-top: 15px;
+  }
+  
+  .form .input-box {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  /* done by me */
+  .dob{
+    margin-left: 2rem;
+  }
+  .city{
+    margin-right: 1rem;
+    min-width:45%;
+  }
+  /* done by mee ends */
+
+  .input-box label {
+    color: #000;
+  }
+  
+  .form :where(.input-box input, .select-box) {
+    position: relative;
+    height: 35px;
+    width: 100%;
+    outline: none;
+    font-size: 1rem;
+    color: #808080;
+    margin-top: 5px;
+    border: 1px solid #EE4E34;
+    border-radius: 6px;
+    padding: 0 15px;
+    background: #7fe6c4;
+  }
+  
+  .input-box input:focus {
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+    font-family: 'Rubik Doodle Shadow', system-ui;
+
+  }
+  
+  .form .column {
+    display: flex;
+    column-gap: 15px;
+  }
+  
+  .form .gender-box {
+    margin-top: 10px;
+  }
+  
+  .form :where(.gender-option, .gender) {
+    display: flex;
+    align-items: center;
+    column-gap: 50px;
+    flex-wrap: wrap;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif !important;
+  }
+  
+  .form .gender {
+    column-gap: 5px;
+  }
+  
+  .gender input {
+    accent-color: #EE4E34;
+  }
+  
+  .form :where(.gender input, .gender label) {
+    cursor: pointer;
+  }
+  
+  .gender label {
+    color: #000;
+  }
+  
+  .address :where(input, .select-box) {
+    margin-top: 10px;
+  }
+  .select-box{
+    min-width: 45.5%;
+  }
+  .select-box select {
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border: none;
+    color: #808080;
+    font-size: 1rem;
+    background:#7fe6c4;
+    font-family: 'Rubik Doodle Shadow', system-ui;
+
+  }
+  
+  .form button {
+    height: 40px;
+    width: 100%;
+    color: #000;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-top: 15px;
+    border: 1px solid #EE3E34;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    background: #7fe6c4;
+    font-family: 'Rubik Doodle Shadow', system-ui;
+
+  }
+  .form button{
+    min-width: 33.3rem;
+  }
+  .form button:hover {
+    background: #EE3E34;
+  }
