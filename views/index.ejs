@@ -9,44 +9,44 @@
 <body>
     <section class="container">
         <header>Registration Form</header>
-        <form class="form" action="#">
+        <form class="form" action="/register" method="post">
             <div class="input-box">
                 <label>Full Name</label>
-                <input required="" placeholder="Enter full name" type="text">
+                <input required="" placeholder="Enter full name" type="text" name="name"/>
             </div>
             <div class="column">
                 <div class="input-box">
                   <label>Phone Number</label>
-                  <input required="" placeholder="Enter phone number" type="telephone">
+                  <input required="" placeholder="Enter phone number" type="text" name="phone"/>
                 </div>
                 <div class="input-box dob">
                   <label>Birth Date</label>
-                  <input required="" placeholder="Enter birth date" type="date">
+                  <input required="" placeholder="Enter birth date" type="date" name="dob"/>
                 </div>
             </div>
             <div class="gender-box">
               <label>Gender</label>
               <div class="gender-option">
                 <div class="gender">
-                  <input checked="" name="gender" id="check-male" type="radio">
+                  <input checked="" name="gender" id="check-male" type="radio" value="Male"/>
                   <label for="check-male">Male</label>
                 </div>
                 <div class="gender">
-                  <input name="gender" id="check-female" type="radio">
+                  <input name="gender" id="check-female" type="radio" value="Female"/>
                   <label for="check-female">Female</label>
                 </div>
                 <div class="gender">
-                  <input name="gender" id="check-other" type="radio">
+                  <input name="gender" id="check-other" type="radio" value="Not Defined"/>
                   <label for="check-other">Prefer not to say</label>
                 </div>
               </div>
             </div>
             <div class="input-box address">
               <label>Address</label>
-              <input required="" placeholder="Enter street address" type="text">
+              <input required="" placeholder="Enter street address" type="text" name="address"/>
               <div class="column">
                 <div class="select-box">
-                  <select>
+                  <select name="country">
                     <option hidden="">Country</option>
                     <option>USA</option>
                     <option>UK</option>
@@ -54,7 +54,7 @@
                     <option>Japan</option>
                   </select>
                 </div>
-              <input class="city" required="" placeholder="Enter your city" type="text">
+              <input class="city" required="" placeholder="Enter your city" type="text" name="city"/>
               </div>
             </div>
             <button>Submit</button>
